@@ -1,0 +1,15 @@
+.tq-footer{
+    padding: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #3a4570;
+    min-width: 1200px;
+}
+#author{
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+#author a{
+    color: white;
+}

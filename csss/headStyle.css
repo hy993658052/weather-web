@@ -1,0 +1,232 @@
+body{
+    background: #f6f9fec9;
+}
+.tq-main{
+    width: 100%;
+    height: 550px;
+    background-image: url('../images/背景.jpg');
+    background-color: #f6f9fec9;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    min-width: 1200px;
+}
+.tq-head{
+    height: 74px;
+    margin-bottom: 35px;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, .24);
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+}
+.logo{
+    float: left;
+    height: 45px;
+    margin-top: 20px;
+}
+.tq-location{
+    text-align: right;
+    padding-top: 25px;
+    height: 32px;
+    vertical-align: middle;
+    position: relative;
+}
+.address{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 14px;
+    padding: 10px 0;
+    position: relative;
+}
+#txt-location{
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+.address #ct-attention{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    left: 8px;
+    top: 40px;
+    width: 418px;
+    border-radius: 5px;
+    padding: 17px 0 35px 0;
+    z-index: 10;
+}
+.address:hover #ct-attention{
+    display: block;
+}
+.address #ct-attention #titl{
+    text-align: left;
+    font-size: 12px;
+    color: #9f9f9f;
+    height: 17px;
+    line-height: 17px;
+    margin-left: 20px;
+    margin-top: 0;
+}
+.address #ct-attention #ls-attention{
+    margin-top: 15px;
+    text-align: left; 
+}
+ol{
+    margin: 0;
+    padding: 0;
+}
+ol li{
+    list-style: none;
+}
+.address #ct-attention #ls-attention .city{
+    height: 32px;
+    line-height: 32px;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #555;
+}
+.address #ct-attention #ls-attention .city p{
+    margin: 0;
+    padding: 0;
+}
+.address #ct-attention #ls-attention .city #ct-location{
+    float: left;
+    width: 146px;
+}
+.address #ct-attention #ls-attention .city #location{
+    display: inline-block;
+    margin: 0;
+}
+.address #ct-attention #ls-attention .city #ct-location .set-btn{
+    display: none;
+    font-size: 12px;
+    color: #777;
+    background: #f7f7f7;
+    border: 1px solid #cecece;
+    border-radius: 4px;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 4px;
+    margin-left: 5px;
+}
+#ct-attention #ls-attention .city:hover #ct-location .set-btn{
+    display: inline-block;
+    vertical-align: middle;
+}
+#ct-attention #ls-attention .city:hover{
+    background-color: #f4f4f4;
+}
+.address #ct-attention #ls-attention .city .icon{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle;
+}
+.address #ct-attention #ls-attention .city #weather{
+    display: inline-block;
+    width: 116px;
+}
+.address #ct-attention #ls-attention .city #temperature{
+    display: inline-block;
+    width: 66px;
+    text-align: right;
+}
+#pl-attention{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    margin-right: 12px;
+    height: 30px;
+    color: #fff;
+}
+.ct-search{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    text-align: left;
+    height: 40px;
+    width: 300px;
+    font-size: 14px;
+    color: #555;
+}
+#sel-city{
+    font-family: "Microsoft Yahei";
+    border: none;
+    outline: none;
+    background: rgba(255,255,255,.2);
+    border-radius: 49px;
+    padding: 5px 13px;
+    width: 300px;
+    height: 30px;
+    color: rgba(255,255,255,.7);
+    line-height: 20px;
+    font-size: 14px;
+}
+input::-webkit-input-placeholder{
+    color: rgba(255,255,255,.7);
+}
+.ct-search #ct-hot-city{
+    position: relative;
+    display: none;
+    background: #fff;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,.15);
+    border-radius: 5px;
+    margin-top: 4px;
+    padding: 20px 0 10px;
+    z-index: 10;
+}
+.ct-search #sel-city:focus~#ct-hot-city{
+    display: block;
+}
+.ct-search #ct-hot-city .tit{
+    font-size: 12px;
+    color: #9f9f9f;
+    height: 12px;
+    line-height: 12px;
+    margin-bottom: 8px;
+    margin-top: 2px;
+    clear: both;
+    padding: 0 20px;
+}
+.ct-search #ct-hot-city #cur-location{
+    height: 14px;
+    line-height: 14px;
+    cursor: pointer;
+    margin-bottom: 24px;
+    clear: both;
+    margin-left: 20px;
+}
+.ct-search #ct-hot-city #ct-history #btn-clear{
+    float: right;
+    width: 40px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 9px;
+    background-color: #f0f0f0;
+    font-size: 12px;
+    color: #868686;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.ct-search #ct-hot-city .ls-history{
+    clear: both;
+    margin: 0 2px 0 20px;
+    overflow:hidden;
+    padding: 0;
+}
+.ct-search #ct-hot-city .opts{
+    float: left;
+    width: 25%;
+    height: 28px;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ct-search #ct-hot-city .opts:hover{
+    color: #ac161d;
+}

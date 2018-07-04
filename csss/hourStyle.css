@@ -1,0 +1,106 @@
+.tq-hours{
+    height: 190px;
+    margin: 0 auto 40px;
+    width: 100%;
+    min-width: 1200px;
+}
+.tq-hours .container{
+    height: 190px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 14px 0 rgba(0,0,0,.08);
+    width: 1200px;
+    padding: 20px 30px 27px;
+    overflow: hidden;
+}
+.tq-hours #tit-hours{
+    font-size: 18px;
+    color: #344665;
+    height: 21px;
+    line-height: 21px;
+    margin: 0 10px 22px 0;
+    float: left;
+}
+.tq-hours #tit-hours::before{
+    content: '';
+    float: left;
+    height: 7px;
+    width: 7px;
+    overflow: hidden;
+    margin-right: 10px;
+    background: #344665;
+    border-radius: 50%;
+    margin-top: 8px;
+}
+.tq-hours #txt-source{
+    float: left;
+    font-size: 12px;
+    color: #8a9baf;
+    height: 21px;
+    line-height: 21px;
+    text-decoration:none;
+}
+.tq-hours .ct-page-ctrl{
+    float: right;
+}
+.ct-page-ctrl .btn-prev{
+    margin-right: 8px;
+}
+.tq-hours .btn{
+    float: left;
+    z-index: 2;
+    width: 22px;
+    height: 22px;
+    text-decoration:none;
+    padding: 0;
+    border-radius: 50%;
+    border: 2px solid #8a9baf;
+}
+.tq-hours .btn span{
+    color: #8a9baf;
+}
+.tq-hours .btn:hover{
+    border-color: #333;
+}
+.tq-hours .btn:hover span{
+    color: #333;
+}
+.tq-hours #ct-weather{
+    clear: both;
+    width: 4800px;
+    transition: margin 1s ease-in-out;
+    margin-left: 0px;
+}
+ol,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.tq-hours #ct-weather #ls-weather-hour .item{
+    float: left;
+    width: 40px;
+    margin-right: 60px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+}
+.tq-hours #ct-weather #ls-weather-hour .item .txt-time{
+    font-size: 14px;
+    color: #8a9baf;
+    line-height: 14px;
+    height: 14px;
+    margin-bottom: 24px;
+}
+.tq-hours #ct-weather #ls-weather-hour .item .icon{
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+}
+.tq-hours #ct-weather #ls-weather-hour .item .txt-degree{
+    font-size: 18px;
+    color: #384c78;
+    line-height: 14px;
+}
